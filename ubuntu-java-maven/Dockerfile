@@ -10,7 +10,7 @@ RUN apt-get update && \
     apt-get install -y oracle-java8-installer && \
     apt-get clean && \
     cd /opt/ && \
-    wget https://www-eu.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.3.9-bin.tar.gz && \
+    wget https://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz && \
     tar -xvzf apache-maven-3.3.9-bin.tar.gz && \
     mv apache-maven-3.3.9-bin.tar.gz maven 
 ENV JAVA_HOME=/usr/lib/jvm/java-8-oracle/ \
