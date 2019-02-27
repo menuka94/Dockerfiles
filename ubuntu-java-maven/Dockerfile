@@ -12,7 +12,7 @@ RUN apt-get update && \
     cd /opt/ && \
     wget https://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz && \
     tar -xvzf apache-maven-3.3.9-bin.tar.gz && \
-    mv apache-maven-3.3.9-bin.tar.gz maven 
+    mv apache-maven-3.3.9 maven 
 ENV JAVA_HOME=/usr/lib/jvm/java-8-oracle/ \
     M2_HOME=/opt/maven \
     PATH="${PATH}:${M2_HOME}/bin"
